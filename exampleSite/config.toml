@@ -2,6 +2,8 @@ baseURL = "https://example.com"
 title = "x"
 theme = "hugo-notepadium"
 copyright = "©2020 Notepadium."
+home = "index.html"
+
 
 languageCode = "en"  # for the RSS generation
 defaultContentLanguage = "en"

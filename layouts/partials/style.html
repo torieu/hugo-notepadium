@@ -3,8 +3,11 @@
 {{- $style = site.Params.style | lower -}}
 {{- end -}}
 
-{{- $coreCSS := resources.Get "css/normalize.css" -}}
-{{- $coreCSS = slice $coreCSS (resources.Get "css/style.css") | resources.Concat "css/tmp_normalize.css" -}}
+{{- $coreCSS := resources.Get "css/style-template.css" -}}
+{{- $customCSS := resources.Get "css/style-mine.css" -}}
+{{- if $customCSS -}}
+    {{- $coreCSS = slice $coreCSS $customCSS | resources.Concat "css/tmp_base.css" -}}
+{{- end -}}
 
 
 {{- $themePath := "" -}}

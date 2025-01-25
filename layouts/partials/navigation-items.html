@@ -1,10 +1,11 @@
 {{- $nav := . -}}
 {{- if or $nav.showCategories $nav.showTags $nav.custom -}}
 <nav style="display: flex; align-items: center; height: 100%;">
-
-    <a href="kisk.html"><img src="{{- "assets/img/postit-pink.svg" | relURL -}}" alt="{{- T "Tags" -}}" class="nav-post-it-image" /></a>
-    <a href="about.html"><img src="{{- "assets/img/postit-yellow.svg" | relURL -}}" alt="{{- T "Tags" -}}" class="nav-post-it-image" /></a>
-    <a href="matika.html"><img src="{{- "assets/img/postit-green.svg" | relURL -}}" alt="{{- T "Tags" -}}" class="nav-post-it-image" /></a>
+    <li style="display: flex; gap: 30px; align-items: center;">
+        <a href="kisk.html"><img src="{{- "assets/img/postit-pink.svg" | relURL -}}" alt="{{- T "Tags" -}}" class="nav-post-it-image" /></a>
+        <a href="about.html"><img src="{{- "assets/img/postit-yellow.svg" | relURL -}}" alt="{{- T "Tags" -}}" class="nav-post-it-image" /></a>
+        <a href="matika.html"><img src="{{- "assets/img/postit-green.svg" | relURL -}}" alt="{{- T "Tags" -}}" class="nav-post-it-image" /></a>
+    </li>
    
 </nav>
 {{- end -}}

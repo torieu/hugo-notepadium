@@ -1,9 +1,13 @@
 <section id="footer">
-    {{- $copyright := site.Copyright -}}
-    {{- if not $copyright -}}
-        {{- $copyright = site.Title | safeHTML -}}
-    {{- end -}}
-    {{- partial "copyright.html" ($copyright | safeHTML) -}}
+    <div class="footer-content">
+        <p>© 2025
+          Viktorie Blahová
+        </p>
+        <div class="footer-links">
+          <a href="https://github.com/torieu" target="_blank">GitHub</a>
+          <a href="https://linkedin.com/in/viktorie-blahová" target="_blank">LinkedIn</a>
+        </div>
+      </div>
 </section>
 {{- partial "math.html" . -}}
 {{- partial "syntax.html" . -}}
