@@ -5,20 +5,7 @@
 
 {{- $coreCSS := resources.Get "css/normalize.css" -}}
 {{- $coreCSS = slice $coreCSS (resources.Get "css/style.css") | resources.Concat "css/tmp_normalize.css" -}}
-{{- if ne $style "light" -}}
-    {{- $darkStyle := resources.Get "css/dark-style.css" -}}
-    {{- if $darkStyle -}}
-    {{- if eq $style "dark" -}}
-        {{- $coreCSS = slice $coreCSS $darkStyle | resources.Concat "css/tmp_style.css" -}}
-    {{- else -}}
-        {{- $darkStyleBegin := (print "@media (prefers-color-scheme: dark) {") | resources.FromString "css/tmp_style_dark_begin.css" -}}
-        {{- $darkStyleEnd := (print "}") | resources.FromString "css/tmp_style_dark_end.css" -}}
-        {{- $darkStyleCSS := slice $darkStyleBegin $darkStyle | resources.Concat "css/tmp_style_dark_.css" -}}
-        {{- $darkStyleCSS = slice $darkStyleCSS $darkStyleEnd | resources.Concat "css/tmp_style_dark.css" -}}
-        {{- $coreCSS = slice $coreCSS $darkStyleCSS | resources.Concat "css/tmp_style.css" -}}
-    {{- end -}}
-    {{- end -}}
-{{- end -}}
+
 
 {{- $themePath := "" -}}
 {{- $theme := "dracula" -}}
@@ -66,8 +53,6 @@
   {{- $coreCSS = slice $coreCSS $syntaxCSS | resources.Concat "css/tmp_core.css" -}}
 {{- end -}}
 
-{{- $iconfontCSS := (resources.Get "css/iconfont.css") | resources.ExecuteAsTemplate "css/tmp_iconfont.css" . -}}
-{{- $coreCSS = slice $coreCSS $iconfontCSS | resources.Concat "css/tmp_iconfont_core.css" -}}
 
 {{- with partial "custom-css.html" . -}}
     {{- if ne . "" -}}
