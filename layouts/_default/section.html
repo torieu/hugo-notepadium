@@ -1,11 +1,24 @@
 {{- define "main" -}}
-{{- $paginator := .Paginator -}}
+{{- if eq .Section "blog" -}}
+    {{- $paginator := .Paginator -}}
 
-<section class="article header"><h1>{{- .Title -}}</h1></section>
-{{- partial "section-body.html" . -}}
-<!-- Ranges through content/posts/*.md -->
+    <div class="post-it-wrapper">
+        <div class="post-it">
+            <img class="post-it-image" alt="a pink post-it note" src="/assets/img/postit-blue.svg" />
+            <div class="post_it_div">
+                <h2>{{- .Title -}}</h2>
+            </div>
+        </div>
+        <br>
+    </div>
+    {{- partial "section-body.html" . -}}
+    <!-- Ranges through content/posts/*.md -->
 
-{{- partial "note-list.html" $paginator -}}
-{{- partial "pagination.html" $paginator -}}
-
+    {{- partial "note-list.html" $paginator -}}
+    {{- partial "pagination.html" $paginator -}}
+{{- else -}}
+    <section class="article header"><h2>{{- .Title -}}</h2></section>
+    {{- partial "section-body.html" . -}}
+    {{- .Content -}}
+{{- end -}}
 {{- end -}}

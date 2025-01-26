@@ -61,11 +61,10 @@ darkTheme = "dracula"
 
 [params.profile]
   enable = true
-  avatar = "https://d33wubrfki0l68.cloudfront.net/ddf49425628d8aec7523db143916b34ae1641e11/b97e8/images/gopher-side_color.svg"
-  name = "gohugo"
-  bio = "Hugo is one of the most popular open-source static site generators. With its amazing speed and flexibility, Hugo makes building websites fun again."  # support markdown syntax
-  twitter = "GoHugoIO"  # https://twitter.com/XXX
-  github = "gohugoio"  # https://github.com/XXX
+  avatar = "https://cdn.muni.cz/media/3736463/navrh-bez-nazvu.png?mode=crop&center=0.5,0.5&rnd=133715969820000000&width=129"
+  name = "Viktorie Blahová"
+  # bio = "Hugo is one of the most popular open-source static site generators. With its amazing speed and flexibility, Hugo makes building websites fun again."  # support markdown syntax
+
 
 [params.nav]
 showCategories = false       # /categories/

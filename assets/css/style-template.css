@@ -151,7 +151,7 @@ acronym {
   padding-top: 20px;
   padding-bottom: 20px;
   min-height: 64px;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 
   background-color: #fff;
 }
@@ -433,7 +433,6 @@ acronym {
 }
 
 .article-container {
-  padding: 32px;
   border-radius: 6px;
 }
 
@@ -637,6 +636,12 @@ ul {
     -webkit-margin-start: 0;
     -webkit-margin-end: 0;
     -webkit-padding-start: 0;
+}
+:-webkit-any(article, aside, nav, section) :-webkit-any(article, aside, nav, section) h1 {
+  /* The font-size is already commented out */
+  /* font-size: 1.17em; */
+  margin-block-start: 0;  /* Set to 0 instead of removing if you want to be explicit */
+  margin-block-end: 0;    /* Set to 0 instead of removing if you want to be explicit */
 }
 
 dl {
