@@ -114,8 +114,13 @@ h3 {
     font-size: 2.5em;
     min-font-size: 32px;
     font-family: 'Caveat', cursive;}
+    
+h4 {
+    font-size: 3em;
+    min-font-size: 80px;
+}
 
-.w-30 {
+    .w-30 {
     width:30%
 }
 
@@ -208,14 +213,28 @@ a:hover{
 
 }
 
-p a, ul a, ol a {
-    color: black;
-    text-decoration: underline;
-    text-decoration-style: dashed;
-    text-decoration-color: rgb(102, 143, 247);
-    text-underline-offset: 2px;  
+p a{
+    color: #EB3549;
+    text-decoration: none;
     position: relative;
     display: inline-block;
+}
+
+p a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #EB3549;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+p a:hover::after {
+    transform: scaleX(1);
 }
 
 .image-on-the-right {
@@ -273,9 +292,13 @@ p a, ul a, ol a {
     text-align: center;
     font-size: 0.9em;
     color:#666
+    
   }
   
   .footer-content {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 80px;
     max-width: 800px;
     margin: 0 auto;
     display: flex;

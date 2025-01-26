@@ -5,8 +5,8 @@ copyright = "©2020 Notepadium."
 home = "index.html"
 
 
-languageCode = "en"  # for the RSS generation
-defaultContentLanguage = "en"
+languageCode = "cs"  # for the RSS generation
+defaultContentLanguage = "cs"
 
 hasCJKLanguage = true
 
@@ -32,7 +32,7 @@ unsafe = true  # enable raw HTML in Markdown
 
 [params]
 style = "auto"  # default: auto. light: light theme, dark: dark theme, auto: based on system.
-dateFormat = "Jan 02, 2006"  # if unset, default is "2006-01-02"
+dateFormat = "02. 01. 2006"  # if unset, default is "2006-01-02"
 readingTime = false  # show reading time after article date
 logo = "assets/img/red-pin.svg"
 slogan = "vikča pokus 2"
