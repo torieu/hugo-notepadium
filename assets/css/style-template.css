@@ -9,10 +9,7 @@ body {
   word-break: normal;
   word-wrap: break-word;
 
-  hyphens: auto;
-  -webkit-hyphens: auto;
-  -ms-hyphens: auto;
-  -moz-hyphens: auto;
+
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -278,7 +275,9 @@ acronym {
   margin: 5px 0;
 }
 
-.note.content {
+
+
+.note.content:hover {
   color: #24292e;
 }
 
@@ -330,7 +329,7 @@ acronym {
   height: 1px;
   bottom: 0;
   left: 0;
-  background-color: #EB3549;
+  background-color: #D41534;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.3s ease-in-out;
@@ -341,7 +340,10 @@ acronym {
 }
 
 .tag {
-  color: rgba(29, 43, 76, .85);
+  color: #D41534;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
 }
 
 
@@ -438,19 +440,20 @@ acronym {
 }
 
 .pagination ul li a {
-  color: #06c;
+  color: #d41534;
   float: left;
   padding: 8px 16px;
   text-decoration: none;
 }
 
 .pagination ul li a.active {
-  background-color: #06c;
+  background-color: #d41534;
   color: #fff;
 }
 
 .pagination ul li a:hover:not(.active) {
-  background-color: rgba(0, 102, 204, .5);
+  background-color: #eb3549;
+  color: white  
 }
 
 .article-container {
