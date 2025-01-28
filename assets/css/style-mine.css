@@ -169,9 +169,18 @@ p a,
 .tag,
 .content-section ul a, 
 .content-section ol a,
-.footer-content a,
-.note.title {
+.article.markdown-body ol a,
+.article.markdown-body ul a
+{
     color: #D41534;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+}
+
+.note.title,
+.footer-content a
+{
     text-decoration: none;
     position: relative;
     display: inline-block;
@@ -182,6 +191,8 @@ p a::after,
 .tag::after,
 .content-section ul a::after, 
 .content-section ol a::after,
+.article.markdown-body ul a::after, 
+.article.markdown-body ol a::after,
 .footer-content a::after,
 .note.title::after {
     content: '';
@@ -199,6 +210,8 @@ p a::after,
 p a:hover::after, 
 .tag:hover::after,
 .content-section ul a:hover::after, 
+.article.markdown-body  ul a:hover::after, 
+.article.markdown-body ol a:hover::after,
 .content-section ol a:hover::after,
 .footer-content a:hover::after,
 .note.title:hover::after {
@@ -207,7 +220,6 @@ p a:hover::after,
 
 /* Override for elements that should stay black */
 .post_it_div h2 a,
-.note.date,
 .note.content,
 .semestr a {
     color: black;
@@ -225,12 +237,6 @@ p a:hover::after,
     display: none;
 }
 
-/* Special case for semester links */
-.semestr a:hover {
-    color: black;
-    text-decoration: underline;
-    text-decoration-color: #D41534;
-}
 
 .handwritten{
     font-family: 'Caveat', cursive;}
