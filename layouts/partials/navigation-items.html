@@ -1,10 +1,10 @@
 {{- $nav := . -}}
 {{- if or $nav.showCategories $nav.showTags $nav.custom -}}
-<nav style="display: flex; align-items: center; height: 100%;">
-    <li style="display: flex; gap: 30px; align-items: center;">
-        <a href="/about" class="nav-post-it"><img src="{{- "assets/img/postit-yellow.svg" | relURL -}}" alt="{{- T "Tags" -}}" class="nav-post-it-image" /></a>
-        <a href="/kisk" class="nav-post-it"><img src="{{- "assets/img/postit-pink.svg" | relURL -}}" alt="{{- T "Tags" -}}" class="nav-post-it-image" /></a>
-        <a href="/blog" class="nav-post-it"><img src="{{- "assets/img/postit-blue.svg" | relURL -}}" alt="{{- T "Tags" -}}" class="nav-post-it-image" /></a>
+<nav class="navigation-bar">
+    <li style="display: flex; gap: 30px; align-items: center; ">
+        <a href="/about" class="post-it-link nav-item">bio</a>
+        <a href="/studium" class="post-it-link nav-item">studium</a>
+        <a href="/blog" class="post-it-link nav-item">blog</a>
     </li>
    
 </nav>

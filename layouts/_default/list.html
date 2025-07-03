@@ -6,7 +6,7 @@
 {{- if not $title -}}
 {{- $title = .Ttitle -}}
 {{- end -}}
-<section class=""><h4>#{{- $title | lower -}}</h4></section>
+<section class=""><h1>#{{- $title | lower -}}</h1></section>
 {{- if .Content -}}
 <article class="article markdown-body">
     {{- .Content -}}

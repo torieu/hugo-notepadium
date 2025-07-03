@@ -103,6 +103,26 @@ body {
 h1 {
     font-size: 5em;
     min-font-size: 80px;
+    white-space: nowrap; /* Prevents word splitting */
+}
+
+@media screen and (max-width: 600px) {
+   /* Allow wrapping if needed, but not splitting words */
+    h1 {
+        font-size: 2.5em;
+        white-space: normal; 
+        word-break: keep-all;
+    }
+    .subtitle {
+        font-size: 1.5em;
+        white-space: normal; 
+        word-break: keep-all;
+    }
+    h2 {
+        font-size: 2.5em;
+        white-space: normal;
+        word-break: keep-all;
+    }
 }
 
 h2 {
@@ -164,19 +184,6 @@ a {
     transition: all 0.3s ease-in-out;
 }
 
-/* Red links with hover underline effect */
-p a, 
-.tag,
-.content-section ul a, 
-.content-section ol a,
-.article.markdown-body ol a,
-.article.markdown-body ul a
-{
-    color: #D41534;
-    text-decoration: none;
-    position: relative;
-    display: inline-block;
-}
 
 .note.title,
 .footer-content a
@@ -186,7 +193,7 @@ p a,
     display: inline-block;
 }
 
-/* Underline animation for red links */
+/* Underline animation for red links
 p a::after, 
 .tag::after,
 .content-section ul a::after, 
@@ -205,9 +212,9 @@ p a::after,
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.3s ease-in-out;
-}
+} */
 
-p a:hover::after, 
+/* p a:hover::after, 
 .tag:hover::after,
 .content-section ul a:hover::after, 
 .article.markdown-body  ul a:hover::after, 
@@ -216,26 +223,9 @@ p a:hover::after,
 .footer-content a:hover::after,
 .note.title:hover::after {
     transform: scaleX(1);
-}
+} */
 
-/* Override for elements that should stay black */
-.post_it_div h2 a,
-.note.content,
-.semestr a {
-    color: black;
-}
 
-/* Remove hover effects for post-it titles */
-.post-it-link:hover {
-    text-decoration: none;
-}
-
-/* Remove underline animation for specific elements */
-.post_it_div h2 a::after,
-.note.date::after,
-.note.content::after {
-    display: none;
-}
 
 
 .handwritten{
@@ -252,7 +242,7 @@ p a:hover::after,
     width: 100%;
     max-width: 100%;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 0px;
     box-sizing: border-box;
   }
   
@@ -455,4 +445,50 @@ p a:hover::after,
     justify-content: center;
     align-items: center;
     width: 100%; /* Ensures the wrapper takes full width */
+}
+
+/* Styl pro text na post-it */
+.post-it-title, .post-it .post-it-title {
+    font-size: 3em;
+    font-family: 'Caveat', cursive;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    font-weight: normal;
+}
+
+/* Odkazy v post-it: černé stále */
+.post-it , .post-it-title ,
+.post-it .post-it-title  {
+    color: #000000 !important;
+    text-decoration: none !important;
+    transition: none !important;
+}
+
+
+a {
+    color: #D41534;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+/* Animace podržení (zatím zakomentovaná) */
+/*
+a:active {
+    transform: scale(0.97);
+    transition: transform 0.1s;
+}
+*/
+
+a:hover,
+a:focus {
+    color: #000;
+}
+
+
+.nav-item {
+    color: #D41534;
+    text-decoration: none;
+    transition: color 0.2s;
+    font-size: 1.2em;
 }

@@ -197,7 +197,7 @@ acronym {
 }
 
 .site.logo:hover {
-  transform: translate(-3px, 3px);
+  transform: translate(3px, -3px);
 }
 
 .nav.item {
@@ -276,9 +276,13 @@ acronym {
 }
 
 
+.note.content {
+  color: #000;
+}
+
 
 .note.content:hover {
-  color: #24292e;
+  color: #000;
 }
 
 .note.imgs {
@@ -725,4 +729,11 @@ blockquote {
 mark {
     color: currentColor;
     background-color: yellow;
+}
+
+nav.navigation-bar {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-family: "Red Hat Display", sans-serif;
 }
