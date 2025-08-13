@@ -307,7 +307,7 @@ acronym {
 .article.header {
   text-align: center;
   /* margin-top: 4px; */
-  margin-bottom: 24px;
+  /* margin-bottom: 24px; */
 }
 
 .article.date {

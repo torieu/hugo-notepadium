@@ -92,7 +92,7 @@ p {
     text-align: left;
     /* padding-left: 80px;
     padding-right: 80px; */
-    padding-bottom: 80px;
+    /* padding-bottom: 20px; */
     flex: 1;
 }
 
@@ -194,37 +194,6 @@ a {
     display: inline-block;
 }
 
-/* Underline animation for red links
-p a::after, 
-.tag::after,
-.content-section ul a::after, 
-.content-section ol a::after,
-.article.markdown-body ul a::after, 
-.article.markdown-body ol a::after,
-.footer-content a::after,
-.note.title::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    bottom: 0;
-    left: 0;
-    background-color: #D41534;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.3s ease-in-out;
-} */
-
-/* p a:hover::after, 
-.tag:hover::after,
-.content-section ul a:hover::after, 
-.article.markdown-body  ul a:hover::after, 
-.article.markdown-body ol a:hover::after,
-.content-section ol a:hover::after,
-.footer-content a:hover::after,
-.note.title:hover::after {
-    transform: scaleX(1);
-} */
 
 
 
@@ -235,7 +204,6 @@ p a::after,
 .homepage-introduction{
     height:14em;
     text-align:right;
-    padding-bottom: 4em;
 }
 
 /* Default styles for mobile */
@@ -337,7 +305,7 @@ p a::after,
   .footer-content {
     padding-left: 80px;
     padding-right: 80px;
-    padding-top: 80px;
+    padding-top: 40px;
     max-width: 800px;
     margin: 0 auto;
     display: flex;
