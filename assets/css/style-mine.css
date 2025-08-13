@@ -103,15 +103,16 @@ body {
 h1 {
     font-size: 5em;
     min-font-size: 80px;
-    white-space: nowrap; /* Prevents word splitting */
+    white-space: normal;   /* Povolit zalamování */
+    word-break: break-word; /* Povolit zalamování slov v krajním případě */
 }
 
 @media screen and (max-width: 600px) {
    /* Allow wrapping if needed, but not splitting words */
     h1 {
         font-size: 2.5em;
-        white-space: normal; 
-        word-break: keep-all;
+        white-space: normal;
+        word-break: break-word;
     }
     .subtitle {
         font-size: 1.5em;
@@ -131,12 +132,12 @@ h2 {
 }
 
 h3 {
-    font-size: 2.5em;
+    font-size: 2em;
     min-font-size: 32px;
     font-family: 'Caveat', cursive;}
     
 h4 {
-    font-size: 3em;
+    font-size: 2em;
     min-font-size: 80px;
 }
 
