@@ -198,6 +198,7 @@ a {
 
 
 
+
 .handwritten{
     font-family: 'Caveat', cursive;}
 
@@ -424,6 +425,7 @@ a {
     text-align: center;
     width: 100%;
     font-weight: normal;
+    rotate:2deg;
 }
 
 /* Odkazy v post-it: černé stále */
@@ -630,3 +632,8 @@ a:focus {
         break-inside: avoid;
     }
 }
+
+.rotate-on-postit {
+    rotate: 4deg
+}
+
