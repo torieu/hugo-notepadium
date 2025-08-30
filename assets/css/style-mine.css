@@ -637,3 +637,12 @@ a:focus {
     rotate: 4deg
 }
 
+ul.scribble{
+  list-style-image: url('/squiggle.svg');
+  list-style-type: "᪤ ";  
+font-size: 2.5em;
+}
+
+ul.handwritten{
+    font-family: 'Caveat', cursive;
+}
