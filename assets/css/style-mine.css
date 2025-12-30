@@ -128,13 +128,12 @@ h1 {
 
 h2 {
     font-size: 3em;
-    font-family: 'Caveat', cursive;
 }
 
 h3 {
     font-size: 2em;
     min-font-size: 32px;
-    font-family: 'Caveat', cursive;}
+    }
     
 h4 {
     font-size: 1.5em;
