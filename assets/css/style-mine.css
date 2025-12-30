@@ -635,7 +635,7 @@ a:focus {
 .rotate-on-postit {
     rotate: 4deg;
     text-align: center;
-    style="margin: 0 auto;"
+    margin: 0 auto;
 }
 
 ul.scribble{
