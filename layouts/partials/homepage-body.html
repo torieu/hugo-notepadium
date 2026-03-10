@@ -1,44 +1,138 @@
-<div class="introduction">
-    <div class="post_it homepage-introduction">
-        <div class="pin-container">
-            <img class="pin" src="assets/img/red-pin.svg" alt="red pin" />
-        </div>
-        <div class="text-container">
-            <div class="main-text">jsem viktorie.</div>
-            <div class="sub-text">lektorka, AI nadšenkyně a baby designérka.</div>
+{{/* ── Hero ──────────────────────────────────────────────── */}}
+<section class="hero">
+    <div class="hero-text">
+        <!-- <p class="hero-label">viktorie blahová</p> -->
+        <!-- <h1 class="hero-headline">I translate between <em>humans</em> and <em>complexity.</em></h1> -->
+
+        <!-- navigating technology with respect for humanity. -->
+        <h1 class="hero-headline">navigating <em>technology</em> with respect for <em>humanity.</em></h1>
+        <p class="hero-description">I teach people to use AI without losing their minds. Literally and figuratively.</p>
+        <!-- <p class="hero-description">educator and experience designer. oscilating between AI adoption and ludditism, with respect to human mind.</p> -->
+    </div>
+    <div class="hero-visual">
+        <!-- 
+        <div class="venn-wrap">
+            <svg viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                Three overlapping circles
+                <circle cx="160" cy="120" r="90" stroke="#EAE2DE" stroke-width="1" fill="rgba(250,247,245,0.4)" />
+                <circle cx="110" cy="210" r="90" stroke="#EAE2DE" stroke-width="1" fill="rgba(250,247,245,0.4)" />
+                <circle cx="210" cy="210" r="90" stroke="#EAE2DE" stroke-width="1" fill="rgba(250,247,245,0.4)" />
+                Intersection dots
+                <circle cx="160" cy="172" r="3" fill="#CC545D" />
+                <circle cx="130" cy="158" r="2" fill="#CC545D" opacity="0.6" />
+                <circle cx="190" cy="158" r="2" fill="#CC545D" opacity="0.6" />
+                Labels
+                <text x="160" y="78" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11"
+                    font-weight="300" fill="#948888" letter-spacing="2">pedagogy</text>
+                <text x="68" y="238" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11"
+                    font-weight="300" fill="#948888" letter-spacing="2">technology</text>
+                <text x="252" y="238" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11"
+                    font-weight="300" fill="#948888" letter-spacing="2">design</text>
+            </svg>
+        </div> -->
+    </div>
+</section>
+
+{{/* ── Writing ───────────────────────────────────────────── */}}
+{{- $writingPages := where site.RegularPages "Section" "blog" -}}
+<section class="homepage-section">
+    <div class="homepage-section-inner">
+        <p class="section-label">writing</p>
+        <div class="writing-grid">
+            {{- range first 4 (sort $writingPages "Date" "desc") -}}
+            <a class="writing-card" href="{{- .RelPermalink -}}">
+                <div class="writing-card-meta">
+                    <span>{{- .Date.Format "Jan 2006" -}}</span>
+                    {{- range .Params.tags -}}
+                        {{- if or (eq . "czech") (eq . "english") -}}
+                        <span class="lang-tag">{{- . -}}</span>
+                        {{- end -}}
+                    {{- end -}}
+                    {{- if .Draft -}}
+                    <span class="status-badge">draft</span>
+                    {{- else if .Params.inprogress -}}
+                    <span class="status-badge">in progress</span>
+                    {{- end -}}
+                </div>
+                <div class="writing-card-title">{{- .Title | safeHTML -}}</div>
+                {{- if .Summary -}}
+                <div class="writing-card-summary">{{- .Summary | plainify | truncate 120 | safeHTML -}}</div>
+                {{- end -}}
+            </a>
+            {{- end -}}
         </div>
     </div>
+</section>
 
-    
-
-    <div class="post-it-container">
-        <a href="/about/" class="post-it-link">
-            <div class="post-it">
-                <img class="post-it-image" alt="a pink post-it note" src=assets/img/postit-yellow.svg />
-                <div class="post_it_div">
-                    <p class="post-it-title">viktorie kdo?</p>
-                </div>
-            </div>
-        </a>
-
-        <a href="/projects/" class="post-it-link">
-            <div class="post-it">
-                <img class="post-it-image" alt="a blue post-it note" src="assets/img/postit-blue.svg" />
-                <div class="post_it_div">
-                    <p class="post-it-title">projekty</p>
-                </div>
-            </div>
-        </a>
-        
-        <a href="/studium" class="post-it-link">
-            <div class="post-it">
-                <img class="post-it-image" alt="a yellow post-it note" src="assets/img/postit-pink.svg" />
-                <div class="post_it_div">
-                    <p class="post-it-title">studium</p>
-                </div>
-            </div>
-        </a>
-
-
+{{/* ── Selected Projects ─────────────────────────────────── */}}
+<section class="homepage-section homepage-section-alt">
+    <div class="homepage-section-inner">
+        <p class="section-label">selected projects</p>
+        <ul class="projects-list">
+            <li class="project-item">
+                <a href="/project/evaluace-kurzu/">
+                    <span class="project-year">2024</span>
+                    <span class="project-title">Evaluace vzdělávacího kurzu AI</span>
+                    <span class="project-meta">
+                        <span class="project-type">research</span>
+                        <span class="lang-tag">czech</span>
+                    </span>
+                </a>
+            </li>
+            <li class="project-item">
+                <a href="/project/latex-accessibility/">
+                    <span class="project-year">2025</span>
+                    <span class="project-title">LaTeX Accessibility Guidelines</span>
+                    <span class="project-meta">
+                        <span class="project-type">design</span>
+                        <span class="lang-tag">czech</span>
+                    </span>
+                </a>
+            </li>
+            <li class="project-item">
+                <a href="https://viktorie.net/detekce.html" target="_blank" rel="noopener noreferrer">
+                    <span class="project-year">2024</span>
+                    <span class="project-title">Interaktivní poznávačka generovaného textu</span>
+                    <span class="project-meta">
+                        <span class="project-type">education</span>
+                        <span class="lang-tag">czech</span>
+                    </span>
+                </a>
+            </li>
+        </ul>
     </div>
-</div>
+</section>
+
+{{/* ── About strip ───────────────────────────────────────── */}}
+<section class="homepage-section">
+    <div class="homepage-section-inner">
+        <p class="section-label">about</p>
+        <div class="about-strip">
+            <div class="about-text">
+                <p><a href="/now">Currently</a> designing an AI literacy course as my final project at <a href="/kisk">KISK</a> — and doing user research and testing on the side.</p>
+                <!-- <p>I love the moment when complex things start to make sense — and I try to be the person who helps that
+                    happen.</p> -->
+                <p><a href="/about">full story →</a></p>
+            </div>
+            <div class="about-details">
+                <!-- <div class="about-detail-row">
+                    <span class="about-detail-label">role</span>
+                    <span class="about-detail-value">AI Course Instructor</span>
+                </div> -->
+                <div class="about-detail-row">
+                    <span class="about-detail-label">studying</span>
+                    <span class="about-detail-value">MSc Information Science, KISK MUNI</span>
+                </div>
+                <div class="about-detail-row">
+                    <span class="about-detail-label">based in</span>
+                    <span class="about-detail-value">Brno, Czech Republic</span>
+                </div>
+                <div class="about-detail-row">
+                    <span class="about-detail-label">contact</span>
+                    <span class="about-detail-value"><a
+                            href="mailto:torie.blahova@gmail.com">torie.blahova@gmail.com</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

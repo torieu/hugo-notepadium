@@ -1,12 +1,10 @@
 {{- $nav := . -}}
 {{- if or $nav.showCategories $nav.showTags $nav.custom -}}
 <nav class="navigation-bar">
-    <li style="display: flex; gap: 30px; align-items: center; ">
-        <a href="/about" class="post-it-link nav-item">bio</a>
-        <a href="/projects" class="post-it-link nav-item">projekty</a>
-        <a href="/matematika" class="post-it-link nav-item">matematika</a>
-        <a href="/kisk" class="post-it-link nav-item">kisk</a>
+    <li style="display: flex; gap: 2rem; align-items: center; list-style: none; margin: 0; padding: 0;">
+        <a href="/blog" class="nav-item">writing</a>
+        <a href="/projects" class="nav-item">projects</a>
+        <a href="/about" class="nav-item">about</a>
     </li>
-   
 </nav>
 {{- end -}}

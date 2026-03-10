@@ -4,19 +4,11 @@
 {{- if eq .Section "blog" -}}
     {{- $paginator := .Paginator -}}
 
-    <div class="post-it-wrapper">
-        <div class="post-it">
-            <img class="post-it-image" alt="a pink post-it note" src="/assets/img/postit-blue.svg" />
-            <div class="post_it_div">
-                <h2>{{- .Title -}}</h2>
-            </div>
-        </div>
-        <br>
-    </div>
+    <section class="article header">
+        <h2>{{- .Title -}}</h2>
+    </section>
 
     {{- partial "section-body.html" . -}}
-    <!-- Ranges through content/posts/*.md -->
-
     {{- partial "note-list.html" $paginator -}}
     {{- partial "pagination.html" $paginator -}}
 

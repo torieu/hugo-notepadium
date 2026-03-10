@@ -1,17 +1,11 @@
 {{- define "main" -}}
-<div class=" page content-section">
-  <h2>404: chybka se vloudila</h2>  
-
-  <p>Možná jste hledali:</p>
-
-  <ul class="scribble" style="font-size: 1.4em;">
-    <li><a href="/vkurzu/" >poznámky z kurzu umělé inteligence </a></li>
-
-    <li><a href="https://viktorie.net/detekce.html" target="_blank">interaktivní poznávačka generovaného textu</a></li>
-    <li><a href="/" >úvodní stránku</a></li>
-  </ul>
+<div class="error-page">
+    <h2>404</h2>
+    <p>This page doesn't exist or has moved.</p>
+    <ul>
+        <li><a href="/">home</a></li>
+        <li><a href="/blog">writing</a></li>
+        <li><a href="/about">about</a></li>
+    </ul>
 </div>
-  
-
-
 {{- end -}}
