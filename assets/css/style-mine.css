@@ -7,8 +7,8 @@
 :root {
   /* Backgrounds */
   /* --parchment: #FAF7F5; */
-  --parchment: #FFFCFB;
-  --warm-white: #FFFCFB;
+  /* --parchment: #FFFCFB;
+  --warm-white: #FFFCFB; */
 
   /* Ink */
   --ink: #262222;
@@ -56,7 +56,7 @@ body::after {
 }
 
 html {
-  font-size: 16px;
+  font-size: 19px;
   color-scheme: light;
 }
 
@@ -116,7 +116,7 @@ a:hover, a:focus {
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: rgba(250, 247, 245, 0.92);
+  /* background-color: rgba(250, 247, 245, 0.92); */
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border-light);
@@ -139,7 +139,14 @@ a:hover, a:focus {
   color: var(--ink);
   text-decoration: none;
   display: flex;
-  align-items: center;
+  align-items: baseline;
+}
+
+.wordmark-dot {
+  color: var(--coral);
+  font-size: 2.6em;
+  line-height: 0;
+  margin-left: -0.02em;
 }
 
 /* Hide the logo image — wordmark is text-only */
@@ -164,10 +171,10 @@ a:hover, a:focus {
 .navigation-bar a,
 .nav-item {
   /* font-family: 'JetBrains Mono', monospace; */
-  font-size: 0.72rem;
+  font-size: 1rem;
   font-weight: 300;
   text-transform: lowercase;
-  letter-spacing: 0.15em;
+  letter-spacing: normal;
   color: var(--ink-muted);
   text-decoration: none;
   transition: color 0.3s ease;
@@ -217,7 +224,7 @@ a:hover, a:focus {
   /* font-family: 'JetBrains Mono', monospace; */
   font-size: 0.62rem;
   font-weight: 300;
-  text-transform: uppercase;
+  text-transform: lowercase;
   letter-spacing: 0.12em;
   color: var(--ink-muted);
   margin-bottom: 0;
@@ -296,7 +303,7 @@ a.category {
   /* font-family: 'JetBrains Mono', monospace; */
   font-size: 0.58rem;
   font-weight: 300;
-  text-transform: uppercase;
+  text-transform: lowercase;
   letter-spacing: 0.12em;
   color: var(--sage);
   background: transparent;
@@ -355,7 +362,7 @@ p.note.date {
   /* font-family: 'JetBrains Mono', monospace; */
   font-size: 0.58rem;
   font-weight: 300;
-  text-transform: uppercase;
+  text-transform: lowercase;
   letter-spacing: 0.12em;
   color: var(--ink-muted);
   margin: 0 0 0.4rem 0;
@@ -440,7 +447,7 @@ section.article.header h2 {
   /* font-family: 'JetBrains Mono', monospace; */
   font-size: 0.58rem;
   font-weight: 300;
-  text-transform: uppercase;
+  text-transform: lowercase;
   letter-spacing: 0.12em;
   color: var(--ink-muted);
 }
@@ -456,7 +463,7 @@ section.article.header h2 {
   /* font-family: 'JetBrains Mono', monospace; */
   font-size: 0.6rem;
   font-weight: 300;
-  text-transform: uppercase;
+  text-transform: lowercase;
   letter-spacing: 0.12em;
   color: var(--ink-muted);
   text-decoration: none;
@@ -488,7 +495,7 @@ section.article.header h2 {
   /* font-family: 'JetBrains Mono', monospace; */
   font-size: 0.62rem;
   font-weight: 300;
-  text-transform: uppercase;
+  text-transform: lowercase;
   letter-spacing: 0.18em;
   color: var(--ink-muted);
   margin-bottom: 1.25rem;
@@ -570,9 +577,9 @@ section.article.header h2 {
 
 .section-label {
 /* font-family: 'JetBrains Mono', monospace;  */
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   font-weight: 300;
-  text-transform: uppercase;
+  text-transform: lowercase;
   letter-spacing: 0.18em;
   color: var(--ink-muted);
   margin-bottom: 1.5rem;
@@ -613,7 +620,7 @@ section.article.header h2 {
   /* font-family: 'JetBrains Mono', monospace; */
   font-size: 0.56rem;
   font-weight: 300;
-  text-transform: uppercase;
+  text-transform: lowercase;
   letter-spacing: 0.12em;
   color: var(--ink-muted);
   margin-bottom: 0.75rem;
@@ -627,7 +634,7 @@ section.article.header h2 {
   /* font-family: 'JetBrains Mono', monospace; */
   font-size: 0.52rem;
   font-weight: 300;
-  text-transform: uppercase;
+  text-transform: lowercase;
   letter-spacing: 0.1em;
   color: var(--clay);
   border: 1px solid var(--clay);
@@ -709,7 +716,7 @@ section.article.header h2 {
   /* font-family: 'JetBrains Mono', monospace; */
   font-size: 0.56rem;
   font-weight: 300;
-  text-transform: uppercase;
+  text-transform: lowercase;
   letter-spacing: 0.1em;
   color: var(--ink-muted);
   white-space: nowrap;
@@ -763,7 +770,7 @@ section.article.header h2 {
   /* font-family: 'JetBrains Mono', monospace; */
   font-size: 0.58rem;
   font-weight: 300;
-  text-transform: uppercase;
+  text-transform: lowercase;
   letter-spacing: 0.12em;
   color: var(--ink-muted);
   padding-top: 0.15em;
@@ -812,7 +819,7 @@ section.article.header h2 {
   /* font-family: 'JetBrains Mono', monospace; */
   font-size: 0.52rem;
   font-weight: 300;
-  text-transform: uppercase;
+  text-transform: lowercase;
   letter-spacing: 0.12em;
   color: var(--ink-muted);
   border: 1px solid var(--border);
@@ -920,7 +927,7 @@ section.article.header h2 {
   /* font-family: 'JetBrains Mono', monospace; */
   font-size: 0.62rem;
   font-weight: 300;
-  text-transform: uppercase;
+  text-transform: lowercase;
   letter-spacing: 0.15em;
   color: var(--ink-muted);
   margin-top: 2rem;
@@ -1005,7 +1012,7 @@ section.article.header h2 {
   /* font-family: 'JetBrains Mono', monospace; */
   font-size: 0.62rem;
   font-weight: 300;
-  text-transform: uppercase;
+  text-transform: lowercase;
   letter-spacing: 0.18em;
   color: var(--ink-muted);
   border-bottom: 1px solid var(--border);
@@ -1075,7 +1082,7 @@ section.article.header h2 {
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.65rem;
   font-weight: 300;
-  text-transform: uppercase;
+  text-transform: lowercase;
   letter-spacing: 0.15em;
   margin-bottom: 2rem;
 }
@@ -1094,7 +1101,7 @@ section.article.header h2 {
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.68rem;
   font-weight: 300;
-  text-transform: uppercase;
+  text-transform: lowercase;
   letter-spacing: 0.12em;
   color: var(--ink-muted);
   transition: color 0.3s ease;
@@ -1256,7 +1263,7 @@ section.article.header h2 {
   /* font-family: 'JetBrains Mono', monospace; */
   font-size: 0.65rem;
   font-weight: 300;
-  text-transform: uppercase;
+  text-transform: lowercase;
   letter-spacing: 0.1em;
   color: var(--ink-muted);
   transition: color 0.3s ease;
