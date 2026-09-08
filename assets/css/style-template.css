@@ -735,5 +735,5 @@ nav.navigation-bar {
     display: flex;
     align-items: center;
     height: 100%;
-    font-family: "Red Hat Display", sans-serif;
+    /* font-family: "Red Hat Display", sans-serif; */
 }
