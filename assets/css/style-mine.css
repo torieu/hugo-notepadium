@@ -6,7 +6,8 @@
 /* ─── Custom Properties ─────────────────────────────────── */
 :root {
   /* Backgrounds */
-  --parchment: #FAF7F5;
+  /* --parchment: #FAF7F5; */
+  --parchment: #FFFCFB;
   --warm-white: #FFFCFB;
 
   /* Ink */
@@ -60,7 +61,7 @@ html {
 }
 
 body {
-  font-family: 'DM Sans', sans-serif;
+  /* font-family: 'DM Sans', sans-serif; */
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.7;
@@ -74,7 +75,7 @@ body {
 
 /* ─── Typography ─────────────────────────────────────────── */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Fraunces', serif;
+  /* font-family: 'Fraunces', serif; */
   font-weight: 400;
   color: var(--ink);
   line-height: 1.2;
@@ -132,7 +133,7 @@ a:hover, a:focus {
 
 /* Wordmark */
 .site.home {
-  font-family: 'Fraunces', serif;
+  /* font-family: 'Fraunces', serif; */
   font-size: 1.3rem;
   font-weight: 400;
   color: var(--ink);
@@ -162,10 +163,10 @@ a:hover, a:focus {
 
 .navigation-bar a,
 .nav-item {
-  font-family: 'JetBrains Mono', monospace;
+  /* font-family: 'JetBrains Mono', monospace; */
   font-size: 0.72rem;
   font-weight: 300;
-  text-transform: uppercase;
+  text-transform: lowercase;
   letter-spacing: 0.15em;
   color: var(--ink-muted);
   text-decoration: none;
@@ -203,7 +204,7 @@ a:hover, a:focus {
 
 .article.header h1,
 .article.title {
-  font-family: 'Fraunces', serif;
+  /* font-family: 'Fraunces', serif; */
   font-size: 2.5rem;
   font-weight: 400;
   letter-spacing: -0.02em;
@@ -213,7 +214,7 @@ a:hover, a:focus {
 }
 
 .article.date {
-  font-family: 'JetBrains Mono', monospace;
+  /* font-family: 'JetBrains Mono', monospace; */
   font-size: 0.62rem;
   font-weight: 300;
   text-transform: uppercase;
@@ -227,7 +228,7 @@ a:hover, a:focus {
 }
 
 .article.date .lang a {
-  font-family: 'JetBrains Mono', monospace;
+  /* font-family: 'JetBrains Mono', monospace; */
   font-size: 0.62rem;
   color: var(--ink-muted);
   transition: color 0.3s ease;
@@ -239,7 +240,7 @@ a:hover, a:focus {
 
 /* Article body */
 .article.markdown-body {
-  font-family: 'DM Sans', sans-serif;
+  /* font-family: 'DM Sans', sans-serif; */
   font-size: 1rem;
   line-height: 1.75;
   color: var(--ink-soft);
@@ -250,7 +251,7 @@ a:hover, a:focus {
 .article.markdown-body h2,
 .article.markdown-body h3,
 .article.markdown-body h4 {
-  font-family: 'Fraunces', serif;
+  /* font-family: 'Fraunces', serif; */
   color: var(--ink);
   /* margin-top: 1em; */
 }
@@ -292,7 +293,7 @@ a:hover, a:focus {
 
 a.tag,
 a.category {
-  font-family: 'JetBrains Mono', monospace;
+  /* font-family: 'JetBrains Mono', monospace; */
   font-size: 0.58rem;
   font-weight: 300;
   text-transform: uppercase;
@@ -338,7 +339,7 @@ ul.note.list .item:hover a.note {
 }
 
 p.note.title {
-  font-family: 'Fraunces', serif;
+  /* font-family: 'Fraunces', serif; */
   font-size: 1.15rem;
   font-weight: 400;
   color: var(--ink);
@@ -351,7 +352,7 @@ ul.note.list .item:hover p.note.title {
 }
 
 p.note.date {
-  font-family: 'JetBrains Mono', monospace;
+  /* font-family: 'JetBrains Mono', monospace; */
   font-size: 0.58rem;
   font-weight: 300;
   text-transform: uppercase;
@@ -381,7 +382,7 @@ p.note.content {
 }
 
 .pagination ul li a {
-  font-family: 'JetBrains Mono', monospace;
+  /* font-family: 'JetBrains Mono', monospace; */
   font-size: 0.62rem;
   font-weight: 300;
   letter-spacing: 0.1em;
@@ -401,7 +402,7 @@ p.note.content {
 
 /* ─── Section headers ────────────────────────────────────── */
 section.article.header h2 {
-  font-family: 'Fraunces', serif;
+  /* font-family: 'Fraunces', serif; */
   font-size: 1.8rem;
   font-weight: 400;
   color: var(--ink);
@@ -410,7 +411,7 @@ section.article.header h2 {
 
 /* List page (#tag, #category) */
 .page > section h1 {
-  font-family: 'Fraunces', serif;
+  /* font-family: 'Fraunces', serif; */
   font-size: 1.8rem;
   font-weight: 400;
   color: var(--ink);
@@ -436,7 +437,7 @@ section.article.header h2 {
 }
 
 .footer-copyright {
-  font-family: 'JetBrains Mono', monospace;
+  /* font-family: 'JetBrains Mono', monospace; */
   font-size: 0.58rem;
   font-weight: 300;
   text-transform: uppercase;
@@ -452,7 +453,7 @@ section.article.header h2 {
 }
 
 .footer-links a {
-  font-family: 'JetBrains Mono', monospace;
+  /* font-family: 'JetBrains Mono', monospace; */
   font-size: 0.6rem;
   font-weight: 300;
   text-transform: uppercase;
@@ -484,7 +485,7 @@ section.article.header h2 {
 }
 
 .hero-label {
-  font-family: 'JetBrains Mono', monospace;
+  /* font-family: 'JetBrains Mono', monospace; */
   font-size: 0.62rem;
   font-weight: 300;
   text-transform: uppercase;
@@ -496,7 +497,7 @@ section.article.header h2 {
 }
 
 .hero-headline {
-  font-family: 'Fraunces', serif;
+  /* font-family: 'JetBrains Mono', monospace ; */
   font-size: 3.5rem;
   font-weight: 400;
   letter-spacing: -0.03em;
@@ -568,7 +569,7 @@ section.article.header h2 {
 }
 
 .section-label {
-  font-family: 'JetBrains Mono', monospace;
+/* font-family: 'JetBrains Mono', monospace;  */
   font-size: 0.6rem;
   font-weight: 300;
   text-transform: uppercase;
@@ -578,7 +579,7 @@ section.article.header h2 {
 }
 
 .section-heading {
-  font-family: 'Fraunces', serif;
+  /* font-family: 'Fraunces', serif; */
   font-size: 1.5rem;
   font-weight: 400;
   color: var(--ink);
@@ -609,7 +610,7 @@ section.article.header h2 {
 }
 
 .writing-card-meta {
-  font-family: 'JetBrains Mono', monospace;
+  /* font-family: 'JetBrains Mono', monospace; */
   font-size: 0.56rem;
   font-weight: 300;
   text-transform: uppercase;
@@ -623,7 +624,7 @@ section.article.header h2 {
 }
 
 .status-badge {
-  font-family: 'JetBrains Mono', monospace;
+  /* font-family: 'JetBrains Mono', monospace; */
   font-size: 0.52rem;
   font-weight: 300;
   text-transform: uppercase;
@@ -641,7 +642,7 @@ section.article.header h2 {
 }
 
 .writing-card-title {
-  font-family: 'Fraunces', serif;
+  /* font-family: 'Fraunces', serif; */
   font-size: 1.15rem;
   font-weight: 400;
   color: var(--ink);
@@ -684,7 +685,7 @@ section.article.header h2 {
 }
 
 .project-year {
-  font-family: 'JetBrains Mono', monospace;
+  /* font-family: 'JetBrains Mono', monospace; */
   font-size: 0.58rem;
   font-weight: 300;
   color: var(--ink-muted);
@@ -693,7 +694,7 @@ section.article.header h2 {
 }
 
 .project-title {
-  font-family: 'Fraunces', serif;
+  /* font-family: 'Fraunces', serif; */
   font-size: 1rem;
   font-weight: 400;
   color: var(--ink);
@@ -705,7 +706,7 @@ section.article.header h2 {
 }
 
 .project-type {
-  font-family: 'JetBrains Mono', monospace;
+  /* font-family: 'JetBrains Mono', monospace; */
   font-size: 0.56rem;
   font-weight: 300;
   text-transform: uppercase;
@@ -759,7 +760,7 @@ section.article.header h2 {
 }
 
 .about-detail-label {
-  font-family: 'JetBrains Mono', monospace;
+  /* font-family: 'JetBrains Mono', monospace; */
   font-size: 0.58rem;
   font-weight: 300;
   text-transform: uppercase;
@@ -808,7 +809,7 @@ section.article.header h2 {
 
 /* ─── Language tag ───────────────────────────────────────── */
 .lang-tag {
-  font-family: 'JetBrains Mono', monospace;
+  /* font-family: 'JetBrains Mono', monospace; */
   font-size: 0.52rem;
   font-weight: 300;
   text-transform: uppercase;
@@ -886,7 +887,7 @@ section.article.header h2 {
 }
 
 .tool-name {
-  font-family: 'Fraunces', serif;
+  /* font-family: 'Fraunces', serif; */
   font-weight: 400;
   font-size: 1.05rem;
   color: var(--ink);
@@ -905,7 +906,7 @@ section.article.header h2 {
 }
 
 .tool-url {
-  font-family: 'JetBrains Mono', monospace;
+  /* font-family: 'JetBrains Mono', monospace; */
   font-size: 0.58rem;
   font-weight: 300;
   color: var(--ink-muted);
@@ -916,7 +917,7 @@ section.article.header h2 {
 }
 
 .secondary-tools-heading {
-  font-family: 'JetBrains Mono', monospace;
+  /* font-family: 'JetBrains Mono', monospace; */
   font-size: 0.62rem;
   font-weight: 300;
   text-transform: uppercase;
@@ -988,7 +989,7 @@ section.article.header h2 {
 }
 
 .cv-name {
-  font-family: 'Fraunces', serif;
+  /* font-family: 'Fraunces', serif; */
   font-size: 2.5rem;
   font-weight: 400;
   letter-spacing: -0.02em;
@@ -1001,7 +1002,7 @@ section.article.header h2 {
 }
 
 .cv-section-title {
-  font-family: 'JetBrains Mono', monospace;
+  /* font-family: 'JetBrains Mono', monospace; */
   font-size: 0.62rem;
   font-weight: 300;
   text-transform: uppercase;
@@ -1026,7 +1027,7 @@ section.article.header h2 {
 }
 
 .cv-item-title {
-  font-family: 'Fraunces', serif;
+  /* font-family: 'Fraunces', serif; */
   font-size: 1.05rem;
   font-weight: 400;
   color: var(--ink);
@@ -1039,7 +1040,7 @@ section.article.header h2 {
 }
 
 .cv-item-date {
-  font-family: 'JetBrains Mono', monospace;
+  /* font-family: 'JetBrains Mono', monospace; */
   font-size: 0.58rem;
   font-weight: 300;
   color: var(--ink-muted);
@@ -1252,7 +1253,7 @@ section.article.header h2 {
 }
 
 .article.navigation a.link {
-  font-family: 'JetBrains Mono', monospace;
+  /* font-family: 'JetBrains Mono', monospace; */
   font-size: 0.65rem;
   font-weight: 300;
   text-transform: uppercase;
